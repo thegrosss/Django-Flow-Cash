@@ -29,7 +29,7 @@ class Category(models.Model):
         verbose_name_plural = "Категории"
 
     def __str__(self):
-        return f"{self.type} : {self.name}"
+        return self.name
 
 class Subcategory(models.Model):
     name = models.CharField(max_length=50, verbose_name="Название")
@@ -40,4 +40,4 @@ class Subcategory(models.Model):
         verbose_name_plural = "Подкатегории"
 
     def __str__(self):
-        return f"{self.name} : {self.category}"
+        return self.name

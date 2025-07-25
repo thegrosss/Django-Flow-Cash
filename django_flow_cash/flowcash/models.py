@@ -25,4 +25,4 @@ class FlowCash(models.Model):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return f"{self.date}: {self.amount} руб."
+        return f"{self.date}, {self.type}: {self.amount} руб."
